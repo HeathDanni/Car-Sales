@@ -1,7 +1,6 @@
 const initialState = {
-    features: [
-
-    ]
+    name: "feature name",
+    price: 1000
 };
 
 export const featureReducer = (state = initialState, action) => {

@@ -2,22 +2,21 @@ import React from 'react';
 import {connect} from 'react-redux';
 import { addFeature } from '../actions/featureActions';
 
-const AdditionalFeature = props => {
+const AdditionalFeature = ({name, price, addFeature}) => {
   return (
     <li>
-      {/* Add an onClick that will let you add a feature to your car */}
-      <button className="button">Add</button>
-      {props.feature.name} (+{props.feature.price})
+      <button onClick={() => addFeature()} className="button">Add</button>
+      {name} (+{price})
     </li>
   );
 };
 
 const mapStateToProps = (state) => {
   return {
-
+    name: state.featureReducer.name,
+    price: state.featureReducer.price
   };
 };
 
-const mapDispatchToProps = {addFeature};
 
-export default connect(mapStateToProps, mapDispatchToProps)(AdditionalFeature);
+export default connect(mapStateToProps, {addFeature} )(AdditionalFeature);
