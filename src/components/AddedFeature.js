@@ -1,4 +1,5 @@
 import React from 'react';
+import {removeFeature} from '../actions/featureActions';
 
 const AddedFeature = props => {
   return (
@@ -9,5 +10,13 @@ const AddedFeature = props => {
     </li>
   );
 };
+
+const mapStateToProps = (state) => {
+  return {
+
+  };
+};
+
+const mapDispatchToProps = {removeFeature};
 
 export default AddedFeature;
