@@ -5,7 +5,3 @@ export const addFeature = () => {
 export const removeFeature = () => {
     return {type: 'REMOVE_FEATURE'};
 };
-
-export const addToTotal = () => {
-    return {type: 'ADD_TO_TOTAL', payload: 'addedPrice'};
-};

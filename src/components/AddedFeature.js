@@ -10,4 +10,12 @@ const AddedFeature = props => {
   );
 };
 
+const mapStateToProps = (state) => {
+  return {
+
+  };
+};
+
+const mapDispatchToProps = {removeFeature};
+
 export default AddedFeature;

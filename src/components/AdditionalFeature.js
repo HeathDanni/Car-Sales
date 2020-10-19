@@ -1,4 +1,5 @@
 import React from 'react';
+import { addFeature } from '../actions/featureActions';
 
 const AdditionalFeature = props => {
   return (
@@ -9,5 +10,13 @@ const AdditionalFeature = props => {
     </li>
   );
 };
+
+const mapStateToProps = (state) => {
+  return {
+
+  };
+};
+
+const mapDispatchToProps = {addFeature};
 
 export default AdditionalFeature;
